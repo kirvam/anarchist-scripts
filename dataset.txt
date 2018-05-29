@@ -1,0 +1,5 @@
+#Name, Type, Description, Parent, Date, Start, Stop, Status
+Operations, Strategy, Operational Excellence, None, 06/01/2016, None, None, None
+Operations Initiative, Initiative, Operate Cloud efficiently., Operations, 06/03/2016, 06/03/2016, 06/03/2018, Green
+Rubrik, Project, Backup project, Operations Initiative, 06/01/201, 10/02/2017, 12/01/2017, Green   
+

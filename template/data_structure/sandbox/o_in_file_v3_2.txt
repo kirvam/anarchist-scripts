@@ -1,0 +1,28 @@
+1,TOP:Modes of Transport:TOP:MOT,0
+2,Modes of Transport:Aircraft:Strategy:Flying machines.,1
+3,Aircraft:P38:Initiative:P38 Lightning,2
+4,P38:Metric1:Note:133 recorded kills.,3
+5,P38:Note1:Note:Fighter Bomber.,3
+6,P38:Note2:Note:Twin boom.,3
+7,P38:Metric2:Note:Top speed is 443.,3
+8,Aircraft:P51:Initiative:P51 Mustang,2
+9,P51:Metric1:Note:Top speed is 437 mph.,8
+10,P51:Note1:Note:Fastest plane.,8
+11,P51:Note2:Note:Versatile.,8
+12,P51:Note3:Note:Bomber escort.,8
+13,P51:Note4:Note:Intercepror.,8
+14,P51:Metric2:Note:10000 deployed.,8
+15,P38:Repair Wing:Project:Need to repair wing.,3
+16,P38:Repair Wheel:Project:Need to repair wheel.,3
+17,Repair Wing:Note1:Note:Parts ordered.,15
+18,Repair Wheel:Note1:Note:Parts back-ordered.,16
+19,Repair Wheel:Note2:Note:Parts now on order after delay.,16
+20,P51:Repair Wing:Project:Need to repair wing.,8
+21,Repair Wing:Note1:Note:Parts ordered.,20
+22,Repair Wing:Note2:Note:Parts installed.,20
+23,Modes of Transport:Vehicles:Strategy:Land vehicles.,1
+24,Vehicles:M4:Initiative:M4 Sherman.,23
+25,Vehicles:M3:Initiative:M3 Stuart.,23
+26,M4:Note1:Note:Produced in mass quatitites.,24
+27,M4:Note2:Note:Gasoline engine.,24
+28,M3:Note1:Note:Light Tank.,25

@@ -1,0 +1,52 @@
+Spectre and Meltdown mitigation detection tool v0.35
+
+Checking for vulnerabilities on current system
+Kernel is [35mLinux 3.10.0-514.21.1.el7.x86_64 #1 SMP Thu May 25 17:04:51 UTC 2017 x86_64[0m
+CPU is [35mIntel(R) Xeon(R) CPU E5-2673 v3 @ 2.40GHz[0m
+
+[1;34mHardware check[0m
+* Hardware support (CPU microcode) for mitigation techniques
+  * Indirect Branch Restricted Speculation (IBRS)
+    * SPEC_CTRL MSR is available: [42m[30m YES [0m
+    * CPU indicates IBRS capability: [41m[30m NO [0m
+  * Indirect Branch Prediction Barrier (IBPB)
+    * PRED_CMD MSR is available: [42m[30m YES [0m
+    * CPU indicates IBPB capability: [41m[30m NO [0m
+  * Single Thread Indirect Branch Predictors (STIBP)
+    * SPEC_CTRL MSR is available: [42m[30m YES [0m
+    * CPU indicates STIBP capability: [41m[30m NO [0m
+  * Enhanced IBRS (IBRS_ALL)
+    * CPU indicates ARCH_CAPABILITIES MSR availability: [41m[30m NO [0m
+    * ARCH_CAPABILITIES MSR advertises IBRS_ALL capability: [41m[30m NO [0m
+  * CPU explicitly indicates not being vulnerable to Meltdown (RDCL_NO): [44m[30m NO [0m
+  * CPU microcode is known to cause stability problems: [44m[30m NO [0m (model 63 stepping 2 ucode 0xffffffff)
+* CPU vulnerability to the three speculative execution attacks variants
+  * Vulnerable to Variant 1: [41m[30m YES [0m
+  * Vulnerable to Variant 2: [41m[30m YES [0m
+  * Vulnerable to Variant 3: [41m[30m YES [0m
+
+[1;34mCVE-2017-5753 [bounds check bypass] aka 'Spectre Variant 1'[0m
+* Kernel has array_index_mask_nospec: [41m[30m NO [0m
+* Kernel has the Red Hat/Ubuntu patch: [41m[30m NO [0m
+* Checking count of LFENCE instructions following a jump in kernel... [41m[30m NO [0m (only 2 jump-then-lfence instructions found, should be >= 30 (heuristic))
+> [46m[30mSTATUS:[0m [41m[30m VULNERABLE [0m (Kernel source needs to be patched to mitigate the vulnerability)
+
+[1;34mCVE-2017-5715 [branch target injection] aka 'Spectre Variant 2'[0m
+* Mitigation 1
+  * Kernel is compiled with IBRS/IBPB support: [41m[30m NO [0m
+  * Currently enabled features
+    * IBRS enabled for Kernel space: [41m[30m NO [0m
+    * IBRS enabled for User space: [41m[30m NO [0m
+    * IBPB enabled: [41m[30m NO [0m
+* Mitigation 2
+  * Kernel compiled with retpoline option: [41m[30m NO [0m
+  * Kernel compiled with a retpoline-aware compiler: [41m[30m NO [0m
+> [46m[30mSTATUS:[0m [41m[30m VULNERABLE [0m (IBRS hardware + kernel support OR kernel with retpoline are needed to mitigate the vulnerability)
+
+[1;34mCVE-2017-5754 [rogue data cache load] aka 'Meltdown' aka 'Variant 3'[0m
+* Kernel supports Page Table Isolation (PTI): [41m[30m NO [0m
+* PTI enabled and active: [41m[30m NO [0m
+* Running as a Xen PV DomU: [42m[30m NO [0m
+> [46m[30mSTATUS:[0m [41m[30m VULNERABLE [0m (PTI is needed to mitigate the vulnerability)
+
+A false sense of security is worse than no security at all, see --disclaimer

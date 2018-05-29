@@ -1,0 +1,35 @@
+use strict;
+use Data::Dumper;
+use Sort::Naturally;
+
+
+open (F, "oscar.txt") || die "Could not open database: $:";
+%category_index = (); %year_index = ();
+while ($line = <F>) {
+    chomp $line;
+    ($year, $category, $name) = split (/:/, $line);
+    create_entry($year, $category, $name) if $name;
+}
+
+sub create_entry {             # create_entry (year, category, name)
+    my($year, $category, $name) = @_;
+    # Create an anonymous array for each entry
+    $rlEntry = [$year, $category, $name];
+    # Add this to the two indices
+    push (@{$year_index {$year}}, $rlEntry);         # By Year
+    push (@{$category_index{$category}}, $rlEntry);  # By Category
+} 
+
+sub print_entries_for_year {
+    my($year) = @_;
+    print ("Year : $year \n");
+    foreach $rlEntry (@{$year_index{$year}}) {
+        print ("\t",$rlEntry->[1], "  : ",$rlEntry->[2], "\n");
+    }
+}
+
+sub print_all_entries_for_year {
+    foreach $year (sort keys %year_index) {
+        print_entries_for_year($year);
+    }
+}

@@ -1,0 +1,14 @@
+1,TOP:Flying:TOP:Flying,0
+2,Flying:Aircraft:Strategy:Flying machines.,1
+3,Aircraft:P38:Initiative:P38 Lightning,2
+4,P38:Metric1:Note:133 recorded kills.,3
+5,P38:Note1:Note:Fighter Bomber.,3
+6,P38:Note2:Note:Twin boom.,3
+7,P38:Metric2:Note:Top speed is 443.,3
+8,Aircraft:P51:Initiative:P51 Mustang,2
+9,P51:Metric1:Note:Top speed is 437 mph.,8
+10,P51:Note1:Note:Fastest plane.,8
+11,P51:Note2:Note:Versatile.,8
+12,P51:Note3:Note:Bomber escort.,8
+13,P51:Note4:Note:Intercepror.,8
+14,P51:Metric2:Note:10000 deployed.,8

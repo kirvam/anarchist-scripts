@@ -1,0 +1,8 @@
+Aircraft: Flying machines:top
+P38, P38 Lightning,Aircraft
+Note1:Fighter Bomber:P38
+Note2:Twin boom:P38
+Metric1:133  recorded kills:P38
+P51:P51 Mustang:Aircraft
+Note1:Fastest plane:P51
+Note2:Versatile:P51

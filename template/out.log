@@ -1,0 +1,381 @@
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+
+==================
+for_while_loop_2
+$VAR1 = [
+          [
+            'none',
+            'Project',
+            '10-31-2017',
+            'MIKE',
+            'MS Dynamics',
+            'Microsoft will present a POC to primarily business on Thursday (based on business stories provided by participants and data from primary sources).',
+            'Green'
+          ],
+          [
+            'none',
+            'Project',
+            '10-31-2017',
+            'MIKE',
+            'O365 Working Group',
+            'Nothing so far this week, going to follow up with Karen Canas.  Still unsure what the priorities are for this project are?',
+            'Green'
+          ],
+          [
+            'none',
+            'Project',
+            '10-31-2017',
+            'MIKE',
+            'Federated Services',
+            'Static, focus has been on Dynamics POC this week.',
+            'Green'
+          ],
+          [
+            'none',
+            'Project',
+            '10-31-2017',
+            'MIKE',
+            'Amazon',
+            'Nothing much happening',
+            'Green'
+          ],
+          [
+            'none',
+            'Project',
+            '10-31-2017',
+            'KEN',
+            'Business Continuity and Disaster Recovery (BC/DR)',
+            ' Still need to meet with Secretary.',
+            'Green '
+          ],
+          [
+            'none',
+            'Project',
+            '10-31-2017',
+            'KEN',
+            'Auto Site Recovery (ASR)',
+            ' Waiting for either Ray or VPN solution Jon is working on with David K.',
+            'Green'
+          ],
+          [
+            'none',
+            'Project',
+            '10-31-2017',
+            'KEN',
+            'Tax BC/DR Plan',
+            'Met with Tom B and got some great input into the BIA for a few critical systems. Tom is going to get the rest of the documents updated electronically (info is gathered not entered) then we will transpose to the BIA worksheet.',
+            'Green  '
+          ],
+          [
+            'none',
+            'Project',
+            '10-31-2017',
+            'CLAUS',
+            'Rubrik',
+            'Rubrik is still cool. Currently protecting 350 VMs and about 45TB of provisioned space. We have about 200TB of provisioned VM space still to go and will not be able to include all of that pre-VxRack (slow, old firewalls do not enough throughput to keep everything backed up on a daily cycle). Will be submitting ACLs today or tomorrow to be put on the cores at TV and NL to protect the data pipes to Rubrik. Will be adding some datamover filesystems soon. They will not traverse our slow old firewalls so we should start getting a bit closer to utilizing the potential of the solution.  That being said the existing network design will still be constricting it somewhat.',
+            'Green'
+          ],
+          [
+            'none',
+            'Project',
+            '10-31-2017',
+            'CLAUS',
+            'Virtual Fire[?1049h[?1h=[?12;25h[?12l[?25h[27m[m[H[2J[?25l[1;1H[38;5;130muse strict[m;
+[38;5;130muse [mData::Dumper;
+
+[38;5;130mmy[m [36m%hash[m;
+[38;5;130mmy[m [36m@array[m;
+[38;5;130mmy[m [36m$key[m;
+[38;5;130mmy[m [36m$line[m;
+[38;5;130mmy[m [36m$ii[m = [31m1[m;
+[38;5;130mmy[m [36m$actions[m = {[10;16H[31m'none'[m => [38;5;130msub [m{ [38;5;130mmy[m [36m$key[m = [31m"1"[m; [36m$hash{[m [36m$array[[m[31m4[m[36m][m [36m}{$key}[m = [ [36m@array[m ]; },[11;16H[36m$hash{[m [36m$array[[m[31m0[m[36m][m [36m}[m => [38;5;130msub [m{ [38;5;130mmy[m [36m$key[m = [103mcreate_entry[m_time(); [36m$key[m = [36m$key[m+[36m$ii[m; [36m$hash{[m [36m$array[[m[31m0[m[36m][m [36m}{$key}[m = [ [36m@array[m ]; },[12;16H[31m'_DEFAULT_'[m => [38;5;130msub [m{ [38;5;130mdie[m [31m"Unrecognized token '[m[36m$_[[m[31m0[m[36m][m[31m'; aborting[m[35m\n[m[31m"[m }
+
+};
+
+[38;5;130mmy[m [36m$html[m = [31m"report_table.html"[m;
+[38;5;130mmy[m [36m@AoA[m  = ();
+[34m# gets data from DATA FH..[m
+[38;5;130mwhile[m([36m<DATA>[m){
+ [38;5;130mmy[m [36m$line[m = [36m$_[m;
+ [38;5;130mchomp[m([36m$line[m);
+ [38;5;130mmy[m [36m$alt[m = [36m$line[m;
+  [38;5;130mmy[m [36m@alt[m = [38;5;130msplit[m([38;5;130m/[m[35m\;\s?[m[38;5;130m/[m,[36m$alt[m);[24;6H[38;5;130mpush[m [36m@AoA[m, [ [36m@alt[m ];
+[34m# evaluateLine($line,$actions);[m
+ [36m$ii[m++;
+ [38;5;130mprint[m [36m$ii[m,[31m"[m[35m\n[m[31m"[m;
+}
+
+[38;5;130mprint[m [31m"[m[35m\n[m[31m==================[m[35m\n[m[31m"[m;
+[38;5;130mprint[m [31m"for_while_loop_2[m[35m\n[m[31m"[m;
+[38;5;130mprint[m [36mDumper[m \[36m@AoA[m;
+[38;5;130mprint[m [31m"Dumper [m[35m\@[m[31mAoA finished[m[35m\n[m[31m"[m;
+for_while_loop_2([36m$actions[m,[36m@AoA[m);
+style_ref_HoHoA_1_print_FH(\[36m%hash[m,[36m$html[m);
+[38;5;130mprint[m [31m"[m[35m\n[m[31mDumper[m[35m\n[m[31m"[m;
+[38;5;130mprint[m [36mDumper[m \[36m%hash[m;
+
+[34m##########
+# SUBS
+##########[m
+[38;5;130msub [m[36mfor_while_loop_2[m{
+[38;5;130mmy[m([36m$actions[m,[36m@AoA[m) = [36m@_[m;
+[38;5;130mmy[m [36m$ii[m;
+[38;5;130mfor[m [38;5;130mmy[m [36m$i[m ( [31m0[m .. [36m$#AoA[m ){[46;151H34,1[10CTop[34;1H[?12l[?25h[46;1H[?1l>[?1049lVim: Caught deadly signal HUP
+Vim: Finished.
+[46;1Hhat he has been working on to move forward while he is on vacation.',
+            'Green'
+          ],
+          [
+            'Tax BC/DR Plan',
+            'Note',
+            '11-07-2017',
+            'KEN',
+            'Tax BC/DR Plan',
+            'Assembling the spreadsheet Tom B gave me of their systems and putting into BIA format.',
+            'Green  '
+          ]
+        ];
+Dumper @AoA finished
+: none; Project; 10-31-2017; MIKE; MS Dynamics; Microsoft will present a POC to primarily business on Thursday (based on business stories provided by participants and data from primary sources).; Green
+$type: none | $_[0]: none; Project; 10-31-2017; MIKE; MS Dynamics; Microsoft will present a POC to primarily business on Thursday (based on business stories provided by participants and data from primary sources).; Green | $array[0]: none
+1: none; Project; 10-31-2017; MIKE; O365 Working Group; Nothing so far this week, going to follow up with Karen Canas.  Still unsure what the priorities are for this project are?; Green
+$type: none | $_[0]: none; Project; 10-31-2017; MIKE; O365 Working Group; Nothing so far this week, going to follow up with Karen Canas.  Still unsure what the priorities are for this project are?; Green | $array[0]: none
+2: none; Project; 10-31-2017; MIKE; Federated Services; Static, focus has been on Dynamics POC this week.; Green
+$type: none | $_[0]: none; Project; 10-31-2017; MIKE; Federated Services; Static, focus has been on Dynamics POC this week.; Green | $array[0]: none
+3: none; Project; 10-31-2017; MIKE; Amazon; Nothing much happening; Green
+$type: none | $_[0]: none; Project; 10-31-2017; MIKE; Amazon; Nothing much happening; Green | $array[0]: none
+4: none; Project; 10-31-2017; KEN; Business Continuity and Disaster Recovery (BC/DR);  Still need to meet with Secretary.; Green 
+$type: none | $_[0]: none; Project; 10-31-2017; KEN; Business Continuity and Disaster Recovery (BC/DR);  Still need to meet with Secretary.; Green  | $array[0]: none
+5: none; Project; 10-31-2017; KEN; Auto Site Recovery (ASR);  Waiting for either Ray or VPN solution Jon is working on with David K.; Green
+$type: none | $_[0]: none; Project; 10-31-2017; KEN; Auto Site Recovery (ASR);  Waiting for either Ray or VPN solution Jon is working on with David K.; Green | $array[0]: none
+6: none; Project; 10-31-2017; KEN; Tax BC/DR Plan; Met with Tom B and got some great input into the BIA for a few critical systems. Tom is going to get the rest of the documents updated electronically (info is gathered not entered) then we will transpose to the BIA worksheet.; Green  
+$type: none | $_[0]: none; Project; 10-31-2017; KEN; Tax BC/DR Plan; Met with Tom B and got some great input into the BIA for a few critical systems. Tom is going to get the rest of the documents updated electronically (info is gathered not entered) then we will transpose to the BIA worksheet.; Green   | $array[0]: none
+7: none; Project; 10-31-2017; CLAUS; Rubrik; Rubrik is still cool. Currently protecting 350 VMs and about 45TB of provisioned space. We have about 200TB of provisioned VM space still to go and will not be able to include all of that pre-VxRack (slow, old firewalls do not enough throughput to keep everything backed up on a daily cycle). Will be submitting ACLs today or tomorrow to be put on the cores at TV and NL to protect the data pipes to Rubrik. Will be adding some datamover filesystems soon. They will not traverse our slow old firewalls so we should start getting a bit closer to utilizing the potential of the solution.  That being said the existing network design will still be constricting it somewhat.; Green
+$type: none | $_[0]: none; Project; 10-31-2017; CLAUS; Rubrik; Rubrik is still cool. Currently protecting 350 VMs and about 45TB of provisioned space. We have about 200TB of provisioned VM space still to go and will not be able to include all of that pre-VxRack (slow, old firewalls do not enough throughput to keep everything backed up on a daily cycle). Will be submitting ACLs today or tomorrow to be put on the cores at TV and NL to protect the data pipes to Rubrik. Will be adding some datamover filesystems soon. They will not traverse our slow old firewalls so we should start getting a bit closer to utilizing the potential of the solution.  That being said the existing network design will still be constricting it somewhat.; Green | $array[0]: none
+8: none; Project; 10-31-2017; CLAUS; Virtual Firewalling; Nothing to report.; Green
+$type: none | $_[0]: none; Project; 10-31-2017; CLAUS; Virtual Firewalling; Nothing to report.; Green | $array[0]: none
+9: none; Project; 10-31-2017; CLAUS; Resource Refresh and VxRack; Waiting for contract to be signed. Working with Jim on prep stuff so that Dell-EMC can start moving as soon as signed. Have pretty logical network diagram for the future VxRack environment. Networking needs to figure out how much they want to be part of the physical network gear included in the VxRack solution. Ray likes the idea of owning it.  Peter does not.  ACLs on the core really makes the most sense for the big, fat pipes. I do like the idea of removing our physical mgmt firewalls from the mix and it is something that should be a lot easier and less disruptive after migration to VxRack is complete.; Green
+$type: none | $_[0]: none; Project; 10-31-2017; CLAUS; Resource Refresh and VxRack; Waiting for contract to be signed. Working with Jim on prep stuff so that Dell-EMC can start moving as soon as signed. Have pretty logical network diagram for the future VxRack environment. Networking needs to figure out how much they want to be part of the physical network gear included in the VxRack solution. Ray likes the idea of owning it.  Peter does not.  ACLs on the core really makes the most sense for the big, fat pipes. I do like the idea of removing our physical mgmt firewalls from the mix and it is something that should be a lot easier and less disruptive after migration to VxRack is complete.; Green | $array[0]: none
+10: none; Project; 10-31-2017; DAN; Refresh Network Security Design;  Still being put together.  Hoping for next Monday.; Green
+$type: none | $_[0]: none; Project; 10-31-2017; DAN; Refresh Network Security Design;  Still being put together.  Hoping for next Monday.; Green | $array[0]: none
+11: none; Project; 10-31-2017; JON; Cloud Design; On hold, waiting on VPN and test plan for edge protection. Minor experimentation as ideas come up from training.; Green
+$type: none | $_[0]: none; Project; 10-31-2017; JON; Cloud Design; On hold, waiting on VPN and test plan for edge protection. Minor experimentation as ideas come up from training.; Green | $array[0]: none
+12: none; Project; 10-31-2017; JON; VPN; Coordinating with David on his required info for a ticket to be created.; Green
+$type: none | $_[0]: none; Project; 10-31-2017; JON; VPN; Coordinating with David on his required info for a ticket to be created.; Green | $array[0]: none
+13: none; Project; 10-31-2017; JON; LM and SolarWinds; Ray said no testing until new server was running. Pinged Rick on its status.  Waiting.; Green
+$type: none | $_[0]: none; Project; 10-31-2017; JON; LM and SolarWinds; Ray said no testing until new server was running. Pinged Rick on its status.  Waiting.; Green | $array[0]: none
+14: Business Continuity and Disaster Recovery (BC/DR); Note; 11-07-2017; KEN; Business Continuity and Disaster Recovery (BC/DR);  Assembling the spreadsheet Tom B gave me of their systems and putting into BIA format.; Green 
+$type:  | $_[0]: Business Continuity and Disaster Recovery (BC/DR); Note; 11-07-2017; KEN; Business Continuity and Disaster Recovery (BC/DR);  Assembling the spreadsheet Tom B gave me of their systems and putting into BIA format.; Green  | $array[0]: Business Continuity and Disaster Recovery (BC/DR)
+1511741302
+
+15: Auto Site Recovery (ASR); Note; 11-07-2017; KEN; Auto Site Recovery (ASR); Meeting with Jon today to knowledge transfer what he has been working on to move forward while he is on vacation.; Green
+$type:  | $_[0]: Auto Site Recovery (ASR); Note; 11-07-2017; KEN; Auto Site Recovery (ASR); Meeting with Jon today to knowledge transfer what he has been working on to move forward while he is on vacation.; Green | $array[0]: Auto Site Recovery (ASR)
+1511741302
+
+16: Tax BC/DR Plan; Note; 11-07-2017; KEN; Tax BC/DR Plan; Assembling the spreadsheet Tom B gave me of their systems and putting into BIA format.; Green  
+$type:  | $_[0]: Tax BC/DR Plan; Note; 11-07-2017; KEN; Tax BC/DR Plan; Assembling the spreadsheet Tom B gave me of their systems and putting into BIA format.; Green   | $array[0]: Tax BC/DR Plan
+1511741302
+
+
+
+
+Dumper
+$VAR1 = {
+          'Virtual Firewalling' => {
+                                     '1' => [
+                                              'none',
+                                              'Project',
+                                              '10-31-2017',
+                                              'CLAUS',
+                                              'Virtual Firewalling',
+                                              'Nothing to report.',
+                                              'Green'
+                                            ]
+                                   },
+          'Refresh Network Security Design' => {
+                                                 '1' => [
+                                                          'none',
+                                                          'Project',
+                                                          '10-31-2017',
+                                                          'DAN',
+                                                          'Refresh Network Security Design',
+                                                          'Still being put together.  Hoping for next Monday.',
+                                                          'Green'
+                                                        ]
+                                               },
+          'Auto Site Recovery (ASR)' => {
+                                          '1' => [
+                                                   'none',
+                                                   'Project',
+                                                   '10-31-2017',
+                                                   'KEN',
+                                                   'Auto Site Recovery (ASR)',
+                                                   'Waiting for either Ray or VPN solution Jon is working on with David K.',
+                                                   'Green'
+                                                 ],
+                                          '1511741320' => [
+                                                            'Auto Site Recovery (ASR)',
+                                                            'Note',
+                                                            '11-07-2017',
+                                                            'KEN',
+                                                            'Auto Site Recovery (ASR)',
+                                                            'Meeting with Jon today to knowledge transfer what he has been working on to move forward while he is on vacation.',
+                                                            'Green'
+                                                          ]
+                                        },
+          'MS Dynamics' => {
+                             '1' => [
+                                      'none',
+                                      'Project',
+                                      '10-31-2017',
+                                      'MIKE',
+                                      'MS Dynamics',
+                                      'Microsoft will present a POC to primarily business on Thursday (based on business stories provided by participants and data from primary sources).',
+                                      'Green'
+                                    ]
+                           },
+          'Resource Refresh and VxRack' => {
+                                             '1' => [
+                                                      'none',
+                                                      'Project',
+                                                      '10-31-2017',
+                                                      'CLAUS',
+                                                      'Resource Refresh and VxRack',
+                                                      'Waiting for contract to be signed. Working with Jim on prep stuff so that Dell-EMC can start moving as soon as signed. Have pretty logical network diagram for the future VxRack environment. Networking needs to figure out how much they want to be part of the physical network gear included in the VxRack solution. Ray likes the idea of owning it.  Peter does not.  ACLs on the core really makes the most sense for the big, fat pipes. I do like the idea of removing our physical mgmt firewalls from the mix and it is something that should be a lot easier and less disruptive after migration to VxRack is complete.',
+                                                      'Green'
+                                                    ]
+                                           },
+          'O365 Working Group' => {
+                                    '1' => [
+                                             'none',
+                                             'Project',
+                                             '10-31-2017',
+                                             'MIKE',
+                                             'O365 Working Group',
+                                             'Nothing so far this week, going to follow up with Karen Canas.  Still unsure what the priorities are for this project are?',
+                                             'Green'
+                                           ]
+                                  },
+          'Federated Services' => {
+                                    '1' => [
+                                             'none',
+                                             'Project',
+                                             '10-31-2017',
+                                             'MIKE',
+                                             'Federated Services',
+                                             'Static, focus has been on Dynamics POC this week.',
+                                             'Green'
+                                           ]
+                                  },
+          'Cloud Design' => {
+                              '1' => [
+                                       'none',
+                                       'Project',
+                                       '10-31-2017',
+                                       'JON',
+                                       'Cloud Design',
+                                       'On hold, waiting on VPN and test plan for edge protection. Minor experimentation as ideas come up from training.',
+                                       'Green'
+                                     ]
+                            },
+          'LM and SolarWinds' => {
+                                   '1' => [
+                                            'none',
+                                            'Project',
+                                            '10-31-2017',
+                                            'JON',
+                                            'LM and SolarWinds',
+                                            'Ray said no testing until new server was running. Pinged Rick on its status.  Waiting.',
+                                            'Green'
+                                          ]
+                                 },
+          'VPN' => {
+                     '1' => [
+                              'none',
+                              'Project',
+                              '10-31-2017',
+                              'JON',
+                              'VPN',
+                              'Coordinating with David on his required info for a ticket to be created.',
+                              'Green'
+                            ]
+                   },
+          'Amazon' => {
+                        '1' => [
+                                 'none',
+                                 'Project',
+                                 '10-31-2017',
+                                 'MIKE',
+                                 'Amazon',
+                                 'Nothing much happening',
+                                 'Green'
+                               ]
+                      },
+          'Business Continuity and Disaster Recovery (BC/DR)' => {
+                                                                   '1' => [
+                                                                            'none',
+                                                                            'Project',
+                                                                            '10-31-2017',
+                                                                            'KEN',
+                                                                            'Business Continuity and Disaster Recovery (BC/DR)',
+                                                                            'Still need to meet with Secretary.',
+                                                                            'Green '
+                                                                          ],
+                                                                   '1511741320' => [
+                                                                                     'Business Continuity and Disaster Recovery (BC/DR)',
+                                                                                     'Note',
+                                                                                     '11-07-2017',
+                                                                                     'KEN',
+                                                                                     'Business Continuity and Disaster Recovery (BC/DR)',
+                                                                                     'Assembling the spreadsheet Tom B gave me of their systems and putting into BIA format.',
+                                                                                     'Green '
+                                                                                   ]
+                                                                 },
+          'Tax BC/DR Plan' => {
+                                '1' => [
+                                         'none',
+                                         'Project',
+                                         '10-31-2017',
+                                         'KEN',
+                                         'Tax BC/DR Plan',
+                                         'Met with Tom B and got some great input into the BIA for a few critical systems. Tom is going to get the rest of the documents updated electronically (info is gathered not entered) then we will transpose to the BIA worksheet.',
+                                         'Green  '
+                                       ],
+                                '1511741320' => [
+                                                  'Tax BC/DR Plan',
+                                                  'Note',
+                                                  '11-07-2017',
+                                                  'KEN',
+                                                  'Tax BC/DR Plan',
+                                                  'Assembling the spreadsheet Tom B gave me of their systems and putting into BIA format.',
+                                                  'Green  '
+                                                ]
+                              },
+          'Rubrik' => {
+                        '1' => [
+                                 'none',
+                                 'Project',
+                                 '10-31-2017',
+                                 'CLAUS',
+                                 'Rubrik',
+                                 'Rubrik is still cool. Currently protecting 350 VMs and about 45TB of provisioned space. We have about 200TB of provisioned VM space still to go and will not be able to include all of that pre-VxRack (slow, old firewalls do not enough throughput to keep everything backed up on a daily cycle). Will be submitting ACLs today or tomorrow to be put on the cores at TV and NL to protect the data pipes to Rubrik. Will be adding some datamover filesystems soon. They will not traverse our slow old firewalls so we should start getting a bit closer to utilizing the potential of the solution.  That being said the existing network design will still be constricting it somewhat.',
+                                 'Green'
+                               ]
+                      }
+        };

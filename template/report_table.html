@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=<% settings.charset %>" />
+<title>CS Project Dashboard</title>
+<link rel="stylesheet" href="http://10.80.8.12:443/css/style.css" />
+<!-- Grab jQuery from a CDN, fall back to local if necessary -->
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!-- End Comments -->
+<style>
+body {
+    background-color: #ddd;
+}
+
+@media screen and (min-width: 480px) {
+    body {
+        background-color: cornflower;
+    }
+}
+</style>
+
+  </head>
+  <body>
+    <div class=page>
+    <h1>CS Dashboard</h1>
+       <div class=metanav>
+    </div>
+  <ul class=entries>
+  <table id="rounded-corner" summary="Listing"> 
+
+<tbody bgcolor="#ffd">
+<tr style="background-color:darkblue; color:white;">
+<td>Heading OR Date</td>
+<td>Staff</td>
+<td>Parent</td>
+<td>Note</td>
+<td>Progress</td>
+</tr>
+</tbody>
+<!-- Start Heading -->
+<tbody>
+<tr style="background-color:#E6E6FA; color:black;">
+<td></td>
+</tr>
+</tbody>
+<!-- Start Listing  -1 0-->
+  <tbody bgcolor="#ffd">
+  <tr class="flip"; style="background-color:lightblue; color:black;">
+<!-- Flip Start -1 1-->
+  <tbody class="section" style="display: none;">
+ </tr>
+
+ </tbody>
+<!-- End -->
+<!-- Start Heading -->
+<tbody>
+<tr style="background-color:#E6E6FA; color:black;">
+<td>Amazon</td>
+</tr>
+</tbody>
+<!-- Start Listing  -1 0-->
+  <tbody bgcolor="#ffd">
+  <tr class="flip"; style="background-color:lightblue; color:black;">
+<!-- Flip Start -1 1-->
+  <tbody class="section" style="display: none;">
+  <td>MIKE</td>
+  <td>Amazon</td>
+  <td>Big change.</td>
+  <td>Green</td>
+ </tr>
+
+<!-- Flip Start -1 1-->
+  <tr>
+  <td>MIKE</td>
+  <td>Amazon</td>
+  <td>Very little change.</td>
+  <td>Green</td>
+ </tr>
+
+<!-- Flip Start -1 2-->
+  <tr>
+  <td>MIKE</td>
+  <td>Amazon</td>
+  <td>Some change.</td>
+  <td>Green</td>
+ </tr>
+
+<!-- Flip Start -1 3-->
+  <tr>
+  <td>MIKE</td>
+  <td>Amazon</td>
+  <td>No change.</td>
+  <td>Green</td>
+ </tr>
+
+ </tbody>
+<!-- End -->
+<!-- Start Heading -->
+<tbody>
+<tr style="background-color:#E6E6FA; color:black;">
+<td>Rubrik</td>
+</tr>
+</tbody>
+<!-- Start Listing  -1 0-->
+  <tbody bgcolor="#ffd">
+  <tr class="flip"; style="background-color:lightblue; color:black;">
+<!-- Flip Start -1 1-->
+  <tbody class="section" style="display: none;">
+  <td>MIKE</td>
+  <td>Task 2 Rubrik</td>
+  <td>Some change.</td>
+  <td>Green</td>
+ </tr>
+
+<!-- Flip Start -1 1-->
+  <tr>
+  <td>MIKE</td>
+  <td>Task 1 Rubrik</td>
+  <td>No change.</td>
+  <td>Green</td>
+ </tr>
+
+ </tbody>
+<!-- End -->
+<!-- Start Heading -->
+<tbody>
+<tr style="background-color:#E6E6FA; color:black;">
+<td>Strategy1</td>
+</tr>
+</tbody>
+<!-- Start Listing  -1 0-->
+  <tbody bgcolor="#ffd">
+  <tr class="flip"; style="background-color:lightblue; color:black;">
+<!-- Flip Start -1 1-->
+  <tbody class="section" style="display: none;">
+  <td>MIKE</td>
+  <td>Amazon</td>
+  <td>Nothing much happening.</td>
+  <td>Green</td>
+ </tr>
+
+ </tbody>
+<!-- End -->
+<!-- Start Heading -->
+<tbody>
+<tr style="background-color:#E6E6FA; color:black;">
+<td>Strategy2</td>
+</tr>
+</tbody>
+<!-- Start Listing  -1 0-->
+  <tbody bgcolor="#ffd">
+  <tr class="flip"; style="background-color:lightblue; color:black;">
+<!-- Flip Start -1 1-->
+  <tbody class="section" style="display: none;">
+  <td>MIKE</td>
+  <td>Rubrik</td>
+  <td>Nothing much happening.</td>
+  <td>Green</td>
+ </tr>
+
+<!-- Flip Start -1 1-->
+  <tr>
+  <td>MGM</td>
+  <td>Strategy2</td>
+  <td>Strategic-Modernization.</td>
+  <td>NA</td>
+ </tr>
+
+ </tbody>
+<!-- End -->
+<!-- Start Heading -->
+<tbody>
+<tr style="background-color:#E6E6FA; color:black;">
+<td>Task 1 Rubrik</td>
+</tr>
+</tbody>
+<!-- Start Listing  -1 0-->
+  <tbody bgcolor="#ffd">
+  <tr class="flip"; style="background-color:lightblue; color:black;">
+<!-- Flip Start -1 1-->
+  <tbody class="section" style="display: none;">
+  <td>MIKE</td>
+  <td>Note 2 Rubrik</td>
+  <td>Big change.</td>
+  <td>Green</td>
+ </tr>
+
+<!-- Flip Start -1 1-->
+  <tr>
+  <td>MIKE</td>
+  <td>Note 1 Rubrik</td>
+  <td>Very little change.</td>
+  <td>Green</td>
+ </tr>
+
+ </tbody>
+<!-- End -->
+<script>
+$('.flip').click(function() {
+    $(this)
+        .closest('tbody')
+        .next('.section')
+        .toggle('fast');
+});
+</script>
+
+</table>
+</div>
+</body>
+</html>
+
+

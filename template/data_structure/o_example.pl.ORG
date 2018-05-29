@@ -1,0 +1,52 @@
+use strict;
+use Data::Dumper;
+use Sort::Naturally;
+
+my $file = shift;
+
+print "----<start>---\n";
+open (F, $file ) || die "Could not open database: $:";
+my %category_index = (); 
+my %year_index = ();
+while (my $line = <F>) {
+    chomp $line;
+  my($year, $category, $name) = split (/:/, $line);
+    create_entry($year, $category, $name) if $name;
+}
+
+
+print "---<Dumper>---\n";
+print Dumper \%category_index;
+print Dumper \%year_index;
+
+
+print_entries_for_year(1995);
+
+print "--next---\n";
+print_all_entries_for_year();
+
+
+print "-----<end>---\n";
+
+sub create_entry {             # create_entry (year, category, name)
+    my($year, $category, $name) = @_;
+    # Create an anonymous array for each entry
+    my $rlEntry = [$year, $category, $name];
+    # Add this to the two indices
+    push (@{$year_index {$year}}, $rlEntry);         # By Year
+    push (@{$category_index{$category}}, $rlEntry);  # By Category
+} 
+
+sub print_entries_for_year {
+    my($year) = @_;
+    print ("Year : $year \n");
+    foreach my $rlEntry (@{$year_index{$year}}) {
+        print ("\t",$rlEntry->[1], "  : ",$rlEntry->[2], "\n");
+    }
+}
+
+sub print_all_entries_for_year {
+    foreach my $year (reverse nsort keys %year_index) {
+        print_entries_for_year($year);
+    }
+}
